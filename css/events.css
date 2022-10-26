@@ -1,0 +1,209 @@
+@import url("main.css");
+
+/*header image*/
+.hero-img {
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+        url("/images/outback_202.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*position of header text*/
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 100px;
+    text-shadow: 1px 1px 12px var(--main-color);
+    text-transform: uppercase;
+}
+
+
+/*background pattern for the page*/
+main {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23f5f4f6' fill-opacity='0.72' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/*small heading above main heading text for section*/
+.subtle-heading {
+    color: var(--main-color);
+    font-family: var(--tertiary-font);
+    font-size: 34px;
+    margin-bottom: -15px;
+    text-align: center;
+}
+
+/*main heading text for sections*/
+.main-heading {
+    font-size: 40px;
+    font-family: var(--secondary-font);
+    text-align: center;
+}
+
+/*************
+
+UPCOMING EVENTS CONTAINER
+
+**************/
+
+.events-container {
+    background: linear-gradient(rgba(233, 15, 8, 0.9), rgba(233, 15, 8, 0.8)),
+    url("/images/poncho.jpg") center no-repeat;
+    background-size: cover;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.events-container .main-heading  {
+    color: black;
+    font-weight: 900;
+}
+
+.events-container .subtle-heading {
+    margin-top: -10px;
+    color: white;
+}
+
+.events-container ul {
+    padding-top: 40px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    list-style: inside;
+}
+
+.events-container ul li {
+    padding: 10px 0;
+}
+
+
+.sandlot-container {
+    padding: 40px;
+}
+
+.sandlot-text {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding-bottom: 40px;
+}
+
+.sandlot-text p {
+    line-height: 1.5;
+    padding-top: 12px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 5px;
+}
+
+.image-grid > img, .image-grid > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+
+/******************
+
+CATERING & RENTING SECTION
+
+******************/
+.catering-section {
+    padding: 40px;
+}
+
+.catering-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.catering-container p {
+    padding-top: 12px;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.form {
+    border-radius: 20px;
+    background-color: white;
+    font-family:var(--tertiary-font);
+    font-size: 22px;
+    flex: 1;
+    padding: 40px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+form input, form textarea {
+    margin-bottom: 30px;
+    width: 100%; /*helps scale it dwon to make it responsive*/
+    font-size: 18px;
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none; /*gets rid of outline when form inputs are clciked*/
+}
+
+
+.form button {
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+.form button:hover {
+    cursor: pointer;
+}
+
+.form button:active {
+    transform: translateY(0.15em);
+}
+
+
+@media (max-width: 1024px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+    }
+}
+
+@media (max-width: 786px) {
+    .hero-img {
+        background-attachment: scroll;
+    }
+    
+    .catering-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 540px) {
+    .hero-text {
+        font-size: 64px;
+    }
+}

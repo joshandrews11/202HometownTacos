@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Menu - 202 Hometown Tacos </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<meta name="description" content="Tex Mex/American style taco shop & bar located in Bellevue, right on the rim of the Pittsburgh city area. With our variety of tacos, chips & dips, mexican street corn, desserts, a long list of margaritas, we're sure you'll find something on the menu that you'll fall in love with.">
+	<!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+	<!--link to css-->
+	<link rel="stylesheet" type="text/css" href="css/events.css">
+    <!--stylesheet from aos library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!--social media icons link font awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+	<!--favicon-->
+	<link rel="icon" href="images/croppedlogo.png" type="image/icon type">
+</head>
+
+<body>
+	<!--image for header-->
+	<div class="hero-img">
+		<header>
+			<nav>
+				<a href="index.html"><img src="images/croppedlogo.png" alt="202 Tacos logo" class="nav-logo"></a>
+				<!--mobile menu button-->
+				<button class="hamburger" id="hamburger">
+					<i class="fas fa-bars"></i>
+				</button>
+				<div class="social-media">
+					<a href="https://www.yelp.com/biz/202-hometown-tacos-bellevue-2"><i class="fa fa-brands fa-yelp fa-2x"></i></a>
+					<a href="https://www.facebook.com/pages/category/Tex-Mex-Restaurant/202-Hometown-TACOS-806796453015580/"><i class="fa fa-brands fa-facebook-f fa-2x"></i></a>
+                    <a href="https://www.instagram.com/202_hometown_tacos/?hl=en"><i class="fa fa-brands fa-instagram fa-2x"></i></a>
+				</div>
+				<ul class="nav-ul" id="nav-ul">
+					<li><a href="https://tabrabbit.com/orders/103-202-hometown-tacos">Order Online</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="events.html">Events & Catering</a></li>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+    <h1 class="hero-text">Events & Catering</h1>
+
+    <main>
+        <section class="sandlot-container">
+            <div class="sandlot-text">
+                <h4 class="subtle-heading">Outdoors</h4>
+                <h3 class="main-heading">The Sandlot</h3>
+                <p>Our newest addition to 202 Hometown Tacos, The Sandlot, offers one of the biggest outdoor spaces around town. Being able to seat up to 80 people & fit upwards of 150, 
+                    it's good for just about any kind of event you can think of which is why we have so many of our own. This space has allowed us to connect more with the Bellevue 
+                    community & host more jam packed karaoke nights, birthday parties, beer pong tournament events, and even local live bands that we host on the weekends. Even if there's no event,
+                    just enjoying the space & enjoying happy hour, relaxing by the firepits or competing in Mega Jenga, Cornhole, or Giant Connect Four with a group of friends or family makes The Sandlot
+                    a good space for anyone to have fun.
+                </p>
+            </div>
+            <div class="image-grid">
+                <video autoplay loop muted playsinline class="image-grid-col-2 image-grid-row-2">
+                    <source src="thesandlot.mp4" type="video/mp4">
+                </video>
+                <img src="images/outback-img1.jpeg" alt="202 Hometown Tacos The Sandlot outside">
+                <img src="images/outback-img2.jpeg" alt="202 Hometown Tacos The Sandlot outside">
+                <img src="images/outback-img3.jpeg" alt="202 Hometown Tacos The Sandlot outside">
+                <img src="images/outback-img4.jpeg" alt="202 Hometown Tacos The Sandlot outside">
+            </div>
+        </section>
+
+        <section class="events-container" id="events">
+            <h3 class="main-heading">Upcoming Events</h3>
+            <h4 class="subtle-heading"> for October</h4>
+                <ul>
+                    <li>karoake night every tuesday 7pm-10pm</li>
+                    <li>Live Bands every Firday 7pm-10pm</li>
+                    <li>Halloween Party October 29th!!!! 🎃</li>
+                </ul>
+        </section>
+
+        <section class="catering-section">
+            <h4 class="subtle-heading">Get In Touch</h4>
+            <h3 class="main-heading">Renting & Catering</h3>
+            <div class="catering-container">
+                <p>If you're interested in gettting catering done by us for an event or you just want to use our space to host an event then please get in touch with us. 
+                    Some of our most popular events that people use our space for are baby showers and birthday parties. During the footall season our bar is usually rented on Sundays for groups of people 
+                    to host football parties. No matter what the event is that you need hosted or what you need catered we will do our best to make sure we can make it happen for you. Just send us the details 
+                    and we'll do whatver we can to make it happen.</p>
+                <div class="form">                    
+                    <form action="https://formsubmit.co/202hometowntaco@gmail.com" method="POST" id="cater">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="Catering/Event Request 202 Hometown Tacos">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name"required>
+                        <label for="phone number">Phone Number:</label>
+                        <input type="text" name="phone number" required>
+                        <label for="name">Email:</label>
+                        <input type="email" name="email" required>
+                        <label for="name">Type your message:</label>
+                        <textarea class="form-control" name="message" rows="3" cols="50" required></textarea>
+                        <button type="submit">Let's Taco 'Bout It <i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    <footer>
+        <!--contact section with map, hours, social media-->
+        <div class="contact">
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.1484363366694!2d-80.0550046852882!3d40.49410055885541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f56348d4b453%3A0xd15ca1db97cb4252!2s202%20Hometown%20Tacos!5e0!3m2!1sen!2sus!4v1602978619126!5m2!1sen!2sus"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
+                </iframe>
+            </div>
+            <!--hours restaurant is open-->
+            <div class="open-hours">
+                <div>
+                    <h4>Hours & Service</h4>
+                    <p>Monday-Friday 12pm - 10pm</p>
+                    <p>Saturday 12pm - 10pm</p>
+                    <p>Sunday CLOSED</p>
+                    <br>
+                    <p>Dine-In & Take-out</p>
+                    <p>Outside seating</p>
+                </div>
+                <div>
+                    <h4 id="contact">Find us</h4>
+                        <p>407 Lincoln Ave</p>
+                        <p>Bellevue, PA 15202</p>
+                        <p><a href="tel:+1-412-301-8141" class="direct">412-301-8141</a></p>
+                        <p><a href="mailto:202hometowntaco@gmail.com" class="direct">202hometowntaco@gmail.com</a></p>
+                    <!--social media icons-->
+                    <div>
+                        <a href="https://www.yelp.com/biz/202-hometown-tacos-bellevue-2"><i class="fa fa-brands fa-yelp fa-2x"></i></a>
+                        <a href="https://www.facebook.com/pages/category/Tex-Mex-Restaurant/202-Hometown-TACOS-806796453015580/"><i class="fa fa-brands fa-facebook-f fa-2x"></i></a>
+                        <a href="https://www.instagram.com/202_hometown_tacos/?hl=en"><i class="fa fa-brands fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><span class="copyright">&#169;</span>202 Hometown Tacos 2018-2022</p>
+            <div class="creatorbrand">
+                <p>Designed and made by JA</p>
+            </div>
+        </div>
+    </footer>
+    <!--------- JAVASCRIPT LINKS ------------->
+    <script type="text/javascript" src="script.js"></script>
+    <!--AOS library js links-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--changes timing of slide in effect on scroll-->
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 700
+        });
+</script>
+<body>
+</html>

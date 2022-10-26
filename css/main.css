@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #e90f08;
+    --primary-font: "Antic Slab", serif;
+    --secondary-font: "Abril Fatface", cursive;
+    --tertiary-font: "Caveat", cursive;
+}
+
+html {
+    height: 100%;
+    font-family: "Alegreya", serif;
+    color: black;
+    font-size: 18px;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+
+.nav-logo {
+    width: 90px;
+    height: 90px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+}
+
+.nav-ul a {
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: text-shadow 0.3s;
+    color: white;
+}
+
+.fa:hover,
+.nav-ul a:hover {
+    text-shadow: 0 1px 10px #fff, 1px 1px 10px #ccc;
+}
+
+/*social media icons*/
+.fa {
+    text-decoration: none;
+    margin: 3px;
+    color: white;
+    transition: text-shadow 0.3s;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+
+
+
+/*************
+
+FOOTER SECTION
+
+**************/
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+        url("/images/tacos.PNG") center no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+/*create spacing between divs in section*/
+.contact div {
+    padding: 20px;
+}
+
+.open-hours {
+    text-align: center;
+}
+
+.open-hours h4 {
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-weight: 900;
+    color: var(--main-color);
+    padding: 15px 0;
+}
+
+/*phone & email contact section*/
+.direct {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 20px;
+}
+
+/*copyright color*/
+footer span {
+    color: var(--main-color);
+}
+
+/*aligns creator brand all the way right of footer*/
+.creatorbrand {
+    margin-left: auto;
+}
+
+@media (max-width: 900px) {
+    nav {
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav-ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    iframe {
+        width: 60vw;
+        height: 70vh;
+    }
+}
+
+/*tablets and smaller screens*/
+@media (max-width: 786px) {
+    /*header image*/
+    .hero-img {
+        background-attachment: scroll;
+    }
+    /*makes contact section divsstack*/
+    .contact {
+        flex-wrap: wrap;
+    }
+
+    iframe {
+        width: 80vw;
+        height: 50vh;
+    }
+}
+
+/*mobile screen sizes*/
+@media (max-width: 540px) {  
+    iframe {
+        width: 90vw;
+        height: 35vh;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    footer div {
+        padding-top: 10px;
+    }
+}
